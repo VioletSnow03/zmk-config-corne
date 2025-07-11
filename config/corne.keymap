@@ -30,7 +30,156 @@
                         <&kp B>,
                         <&macro_release>,
                         <&kp LEFT_ALT &kp LCTRL>;
-                        label="detach_instance";
+                        label="DETACH_INSTANCE";
+                };
+                toggle_UI: toggle_UI {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp BACKSLASH>,
+                        <&macro_release>,
+                        <&kp LCTRL>;
+
+                         label = "TOGGLE_UI";
+                };      
+
+                paste_to_replace: paste_to_replace {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                         bindings =
+                        <&macro_press>,
+                        <&kp LEFT_SHIFT &kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp R>,
+                        <&macro_release>,
+                        <&kp LEFT_SHIFT &kp LCTRL>;
+
+                         label = "PASTE_TO_REPLACE";
+                  };
+
+                ungroup: ungroup {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp BACKSPACE>,
+                        <&macro_release>,
+                        <&kp LCTRL>;
+
+                        label = "UNGROUP";
+                 };
+
+                screenshot: screenshot {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                        <&macro_tap>,
+                        <&kp S>,
+                        <&macro_release>,
+                        <&kp LEFT_WIN &kp LEFT_SHIFT>;
+
+                        label = "SCREENSHOT";
+                };
+
+                figma_AI: figma_AI {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp K>,
+                        <&macro_release>,
+                        <&kp LCTRL>;
+
+                        label = "FIGMA_AI";
+                };
+
+                copy_properties: copy_properties {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LEFT_ALT &kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp C>,
+                        <&macro_release>,
+                        <&kp LEFT_ALT &kp LCTRL>;
+
+                        label = "COPY_PROPERTIES";
+                };
+
+                comment: comment {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp K &kp C>,
+                        <&macro_release>,
+                        <&kp LCTRL>;
+
+                        label = "COMMENT";
+                };
+
+                uncomment: uncomment {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LCTRL>,
+                        <&macro_tap>,
+                        <&kp K &kp U>,
+                        <&macro_release>,
+                        <&kp LCTRL>;
+
+                        label = "UNCOMMENT";
+                };
+
+                row_height: row_height {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LEFT_ALT>,
+                        <&macro_tap>,
+                        <&kp H &kp O &kp H>,
+                        <&macro_release>,
+                        <&kp LEFT_ALT>;
+
+                        label = "ROW_HEIGHT";
+                };
+
+                column_width: column_width {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_press>,
+                        <&kp LEFT_ALT>,
+                        <&macro_tap>,
+                        <&kp H &kp O &kp W>,
+                        <&macro_release>,
+                        <&kp LEFT_ALT>;
+
+                        label = "COLUMN_WIDTH";
+                };
+
+                switch: switch {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings =
+                        <&macro_tap>,
+                        <&kp S &kp W &kp I &kp T &kp C &kp H &kp ENTER>;
+
+                        label = "SWITCH";
                 };
         };
         keymap {
