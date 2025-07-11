@@ -31,7 +31,7 @@
                         <&macro_release>,
                         <&kp LEFT_ALT &kp LCTRL>;
                         label="detach_instance";
-                }
+                };
         };
         keymap {
                 compatible = "zmk,keymap";
