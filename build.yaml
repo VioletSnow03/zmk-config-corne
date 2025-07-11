@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: nice_view
-    shield: corne_left
-  - board: nice_view
-    shield: corne_right
+  - board: corne_left
+    shield: nice_view
+  - board: corne_right
+    shield: nice_view
