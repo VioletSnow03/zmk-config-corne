@@ -182,6 +182,7 @@
                         label = "SWITCH";
                 };
         };
+
         keymap {
                 compatible = "zmk,keymap";
 
